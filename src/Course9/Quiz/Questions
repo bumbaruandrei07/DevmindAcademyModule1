@@ -1,0 +1,10 @@
+
+Evalueaza valoarea de adevar a urmatoarelor doua afirmatii:
+I. Dupa definirea unui (prim) constructor cu cel putin un parametru nu este necesara definirea unui alt constructor fara parametri deoarece pentru acest caz exista deja constructorul implicit.
+II. Un camp (al unei clase) de tipul static final trebuie initializat obligatoriu in fiecare constructor al clasei respective.
+
+I. False - Dupa definirea unui constructor, constructorul implicit este *ascuns*. Prin urmare, acesta nu mai poate fi apelat. Daca se doreste existenta unui constructor care nu primeste parametrii, se poate defini un constructor (explicit) care nu primeste parametrii.
+
+II. False - Campurile de tip ''static final'' trebuie initializate obligatoriu la definire, in cadrul clasei.
+Putem mentiona ca orice entitate de tip ''static'' apartine clasei si orice entitate de tip ''final'' poate fi initializata doar o singura data.
+Prin urmare, este obligatoriu ca entitatea ce insumeaza ambele trasaturi sa fie initializate (o singura data) imediat dupa definire (i.e. in cadrul starii) - este singurul loc posibil "din cod" pentru aceasta operatie.
